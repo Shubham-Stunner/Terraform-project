@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-content">
+                <img src="myphoto.jpg" alt="My Profile Picture" width="150" height="150">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        <b> Shubham Mukherjee </b>
+                        <p>Engineer|| Python || Cloud computing || AWS Cloud || Networking || Terraform || DevOps || Git || Ansible || Docker || Jenkins || Kubernetes.</p>
+                        <small>Bangalore,Karnatka,India</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hey! I'm Shubham Mukherjee, a tech enthusiast with a focus on cloud computing. I hold a degree in Electrical and Electronics Engineering. During my academic journey, the rapid growth of cloud services captivated me, leading me to delve deeper into this transformative technology. I've received comprehensive training in various technologies and gained hands-on experience with AWS (EC2, S3, VPC), DevOps tools (Docker, Jenkins, Kubernetes), MySQL, Python, and Terraform.</p>
+            <p>I believe continuous learning and development to keep myself up-to-date and up-skilled is crucial in modern-day application development for customers. I'm driven by the potential of cloud computing to revolutionize industries and shape our digital future. With a solid foundation in engineering and practical experience, I'm committed to innovating and creating efficient solutions in the ever-expanding cloud landscape.</p>
+            <p>Feel free to reach out to me at <a href="mailto:shubhammukherji654@gmail.com">shubhammukherji654@gmail.com</a>.</p>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>1. Two-tier-App Deployment</h3>
+                <p>Successful deployment of our two-tier application, built on Flask and MySQL, to handle a whopping 10,000 concurrent users! Leveraging cutting-edge DevOps practices, we orchestrated this achievement with Docker and Kubernetes, culminating in deployment on Amazon Elastic Kubernetes Service (EKS) for fault tolerance and scalability.</p>
+                <p>Containerization with Docker: Utilized Docker and Docker-compose for seamless encapsulation of application components, ensuring versioning and accessibility by pushing Docker images to DockerHub Repository.<br><br>
+                Kubernetes Cluster Setup: Automated Kubernetes cluster setup with kubeadm, transitioning to AWS EKS for enhanced scalability and fault tolerance using eksctl for automated cluster creation.<br><br>
+                Deployment with Kubernetes: Simplified deployment using Helm to package Kubernetes manifest files, ensuring consistency across environments and deploying the application on AWS EKS.<br><br>
+                High Availability and Load Balancing: Configured multi-node Kubernetes cluster setup for high availability, implementing load balancing to optimize performance and reliability.</p>
+            </div>
+            <div class="project">
+                <h3>2. Highly Available Web Application</h3>
+                <p>Successfully designed and implemented a robust web application hosted on Amazon Web Services (AWS), ensuring high availability, scalability, and efficient management.</p>
+                <p>VPC Architecture: Created a secure Virtual Private Cloud (VPC) with two public subnets in different availability zones.<br><br>
+                EC2 Instances: Deployed instances in public subnets with auto-scaling groups for enhanced performance.<br><br>
+                RDS Database: Utilized two RDS servers in private subnets across different availability zones for data management.<br><br>
+                Load Balancer: Implemented an internet-facing load balancer to evenly distribute traffic to EC2 instances, optimizing performance and redundancy.<br><br>
+                Monitoring Services: Integrated CloudWatch, CloudTrail, and SNS for proactive monitoring, logging, and notifications.<br><br>
+                Web Application Features:<br><br>
+                Developed a highly available web application using PHP, Apache, and MySQL.<br><br>
+                Implemented a dynamic data retrieval system, showcasing sample data from an RDS database.<br><br>
+                Ensured smooth operation with auto-scaling and load balancing, enhancing user experience.<br><br>
+                Future Scope:<br><br>
+                Expanding to additional AWS regions for global accessibility, implementing continuous integration and deployment (CI/CD), and exploring microservices architecture for scalability.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shubham Mukherjee. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
